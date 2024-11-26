@@ -35,8 +35,7 @@ public class Person {
         this.age = age;
     }
 
-    void show_info(){
-        System.out.println("idade" + age + "name" + "id:" + id);
+    public void printDetails() {
+        System.out.printf("ID: %d;\nNome: %s;\nIdade: %d.\n", this.id, this.name, this.age);
     }
-
 }

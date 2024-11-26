@@ -5,6 +5,10 @@ import models.*;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> lista = new ArrayList<>();
+        ArrayList<String> users = new ArrayList<>();
+        ArrayList<String> autor = new ArrayList<>();
+
+
+
     }
 }
