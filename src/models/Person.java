@@ -10,12 +10,19 @@ public class Person {
         this.name = name;
         this.age = age;
     }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public void printDetails() {
         System.out.printf("ID: %d;\nNome: %s;\nIdade: %d.\n", this.id, this.name, this.age);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 }
