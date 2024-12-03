@@ -12,14 +12,12 @@ public class BookController {
         this.bookslist = bookslist;
     }
 
-    public void add_books(Book book) {
+    private void add_books(Book book) {
         bookslist.add(book);
     }
-
-    public void remove_books(int book_id) {
+    private void remove_books(int book_id) {
         bookslist.removeIf(book -> book.getBook_id() == book_id);
     }
-
     public void displayBooks() {
         for (Book book : bookslist) {
             System.out.println(book);
@@ -27,10 +25,10 @@ public class BookController {
     }
 
     public void adminAddBook(Admin admin, Book book) {
-        admin.addBookToLibrary(this, book);
+        add_books(book);
     }
 
     public void adminRemoveBook(Admin admin, int book_id) {
-        admin.removeBookFromLibrary(this, book_id);
+        remove_books(book_id);
     }
 }
