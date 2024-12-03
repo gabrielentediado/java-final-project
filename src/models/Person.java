@@ -11,7 +11,7 @@ public class Person {
         this.age = age;
     }
     public void printDetails() {
-        System.out.printf("ID: %d;\nNome: %s;\nIdade: %d.\n", this.id, this.name, this.age);
+        System.out.printf(" ID: " + id + " Nome: "+ name +" Idade: " + age);
     }
 
     public int getId() {
