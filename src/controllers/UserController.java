@@ -10,7 +10,7 @@ public class UserController {
     public UserController(ArrayList<User> userList){
         this.userList = userList;
     }
-    private void addUser(User user) {
+    public void addUser(User user) {
         userList.add(user);
     }
     public void displayUsers() {

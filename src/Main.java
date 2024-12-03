@@ -13,15 +13,17 @@ public class Main {
         User user = new User(12323, "Fulano", 50);
 
         ArrayList<User> userList = new ArrayList<>();
-        ArrayList<Book> bookslist = new ArrayList<>();
+        ArrayList<Book> booksList = new ArrayList<>();
 
         UserController users = new UserController(userList);
-        BookController library = new BookController(bookslist);
+        BookController library = new BookController(booksList);
 
+        users.addUser(user);
 
         Book book = new Book("TESTE", 11/10/2003, 123321);
         admin.addBookToLibrary(library, book);
 
+        users.displayUsers();
         library.displayBooks();
     }
 }
