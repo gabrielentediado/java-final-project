@@ -1,8 +1,9 @@
 package models;
 
-class Book{
-    String name;
-    int date, book_id;
+
+public class Book{
+    private String name;
+    private int date, book_id;
     public Book(String name, int date, int book_id) {
         this.name = name;
         this.date = date;
@@ -31,5 +32,8 @@ class Book{
 
     public void setBook_id(int book_id) {
         this.book_id = book_id;
+    }
+    @Override public String toString() {
+        return "Book{" + "name='" + name + '\'' + ", date=" + date + ", book_id=" + book_id + '}';
     }
 }
